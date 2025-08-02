@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Display de entrada */
+#calculadora {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: right;
+}
+
+/* Tabla de botones */
+#classTable table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+/* Botones generales */
+input[type="button"],
+input[type="reset"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Botón de números */
+.btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+.btn:hover {
+    background-color: #d5d5d5;
+}
+
+/* Botones de operaciones */
+.operator {
+    background-color: #4caf50;
+    color: white;
+}
+.operator:hover {
+    background-color: #45a047;
+}
+
+/* Botón igual */
+.calcular {
+    background-color: #2196f3;
+    color: white;
+}
+.calcular:hover {
+    background-color: #1976d2;
+}
+
+/* Botón reset */
+.reset {
+    background-color: #f44336;
+    color: white;
+}
+.reset:hover {
+    background-color: #d32f2f;
+}
+
+/* Limpiar flotados */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
